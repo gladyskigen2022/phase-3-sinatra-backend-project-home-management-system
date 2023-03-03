@@ -23,8 +23,6 @@ ActiveRecord::Schema.define(version: 2023_03_02_110703) do
     t.string "image"
     t.integer "category_id"
     t.integer "member_id"
-    t.index ["category_id"], name: "index_assets_on_category_id"
-    t.index ["member_id"], name: "index_assets_on_member_id"
   end
 
   create_table "categories", force: :cascade do |t|
@@ -35,6 +33,4 @@ ActiveRecord::Schema.define(version: 2023_03_02_110703) do
     t.string "member_name"
   end
 
-  add_foreign_key "assets", "categories"
-  add_foreign_key "assets", "members"
 end

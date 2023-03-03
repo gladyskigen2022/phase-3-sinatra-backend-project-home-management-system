@@ -9,8 +9,8 @@ class CreateAssets < ActiveRecord::Migration[6.1]
       t.string :price
       t.text :comment
       t.string :image
-      t.references :category, foreign_key: true
-      t.references :member, foreign_key: true
+      t.integer :category_id
+      t.integer :member_id 
     end
   end
 end
