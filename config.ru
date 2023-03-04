@@ -13,5 +13,6 @@ use Rack::JSONBodyParser
 
 # Our application
 use AssetsController
-use CategoryController
+use CategoriesController
+use MembersController
 run ApplicationController
