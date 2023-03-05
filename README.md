@@ -1,15 +1,14 @@
-# Phase 3 Project Guidelines
+# Home Asset Tracking & Inventory Management
+* The README file is structured as follows: 1. Project Title. 2. Project goal/objectives 3. Project Setup. 4. Project Description.  5. Author & License.
 
-## Learning Goals
+## Goals of this project
 
 - Build a web basic API with Sinatra and Active Record to support a React
   frontend
 
 ## Introduction
 
-Congrats on getting through all the material for Phase 3! Now's the time to put
-it all together and build something from scratch to reinforce what you know and
-expand your horizons.
+Putting it all together project
 
 The focus of this project is **building a Sinatra API backend** that uses
 **Active Record** to access and persist data in a database, which will be used
@@ -17,17 +16,17 @@ by a separate **React frontend** that interacts with the database via the API.
 
 ## Requirements
 
-For this project, you must:
+For this project:
 
-- Use Active Record to interact with a database.
-- Have at least two models with a one-to-many relationship.
+- Used Active Record to interact with a database.
+- Have three models with a one-to-many relationship.
+*Assets, *Category * Member
 - At a minimum, set up the following API routes in Sinatra:
-  - create and read actions for both models
-  - full CRUD capability for one of the models: 
+  - create and read actions for all models
+  - full CRUD capability for all of the models: 
   The update action should be implemented using a form that is 
   pre-filled with existing values for the object. On submission of 
-  the form, the object should update. Note: Using a like button or 
-  similar will not meet the update requirement.
+  the form, the object should update. 
 - Build a separate React frontend application that interacts with the API to
   perform CRUD actions.
 - Implement proper front end state management. You should be updating state using a
@@ -43,22 +42,18 @@ For this project, you must:
   should NOT be relying on filtering front end state or a separate fetch request to
   retrieve related data.
 
-For example, build a todo list application with a React frontend interface and a
-Sinatra backend API, where a user can:
+*Its simply a React frontend interface and a Sinatra backend API, where a user can:
 
-- **Create** a new todo
-- **Read** a list of all todos
-- **Update** an individual todo
-- **Delete** a todo
-
-A `Todo` can be tagged with a `Category`, so that each todo _belongs to_ a
-category and each category _has many_ todos.
+- **Create** a new asset/category/member
+- **Read** a list of all assets/categories/members
+- **Update** an individual asset/category/member
+- **Delete** a asset/category/member
 
 ## Getting Started
 
 ### Backend Setup
 
-This repository has all the starter code needed to get a Sinatra backend up and
+The cloned repository for this project has all the starter code needed to get a Sinatra backend up and
 running. [**Fork and clone**][fork link] this repository to get started. Then, run
 `bundle install` to install the gems.
 
@@ -85,7 +80,7 @@ This will run your server on port
 
 Your backend and your frontend should be in **two different repositories**.
 
-Create a new repository in a **separate folder** with a React app for your
+i.e -Create a new repository in a **separate folder** with a React app for your
 frontend. To do this, `cd` out of the backend project directory, and use
 [create-react-app][] to generate the necessary code for your React frontend:
 
@@ -111,7 +106,7 @@ fetch("http://localhost:9292/test")
 ## Project Tips
 
 - This project is intended to focus more on the backend than the frontend, so
-  try and keep the React side of things relatively simple. Focus on working with
+  the React side of things is relatively simple. Main Focus is on working with
   Active Record and performing CRUD actions. What are some interesting queries you can write? What kinds of questions can you ask of your data?
 - Once you have a project idea, come up with a domain model and decide what
   relationships exist between the models in your application. Use a tool like
@@ -136,3 +131,7 @@ fetch("http://localhost:9292/test")
 [dbdiagram.io]: https://dbdiagram.io/
 [postman download]: https://www.postman.com/downloads/
 [network tab]: https://developer.chrome.com/docs/devtools/network/
+
+* Author: Gladys Kigen
+* Licence: Operating under Moringa school - student licence.
+
