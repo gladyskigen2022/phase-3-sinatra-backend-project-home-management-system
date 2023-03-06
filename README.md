@@ -51,6 +51,13 @@ For this project:
 
 ## Getting Started
 
+ ### Models
+  This project is designed on 3 models structure : Assets, Category and Member, on one to many relationships.
+  #Below is a DB diagram to illustrate
+
+![db](https://user-images.githubusercontent.com/118131567/223001153-075e80e8-0550-45d0-ad78-203b97b14bd0.png)
+
+
 ### Backend Setup
 
 The cloned repository for this project has all the starter code needed to get a Sinatra backend up and
@@ -101,9 +108,8 @@ example:
 fetch("http://localhost:9292/test")
   .then((r) => r.json())
   .then((data) => console.log(data));
-```
-
-## Project Tips
+  
+ ## Project Tips
 
 - This project is intended to focus more on the backend than the frontend, so
   the React side of things is relatively simple. Main Focus is on working with
